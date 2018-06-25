@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Followers List View Controller-->
+        <scene sceneID="nsF-St-Pwg">
+            <objects>
+                <viewController restorationIdentifier="FollowersListViewController" storyboardIdentifier="FollowersListViewController" id="9MV-S8-M4t" customClass="FollowersListViewController" customModule="TwitterClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3g8-Um-8Ij"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Ma-nt-aC5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fHU-qL-qek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTH-op-AWH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="baS-bD-Jei">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="baS-bD-Jei" id="uBe-v4-Cpy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9MV-S8-M4t" id="ama-cD-fEw"/>
+                                    <outlet property="delegate" destination="9MV-S8-M4t" id="Ful-zh-3Ja"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cTH-op-AWH" secondAttribute="trailing" id="aKX-vk-fMB"/>
+                            <constraint firstItem="cTH-op-AWH" firstAttribute="top" secondItem="3g8-Um-8Ij" secondAttribute="bottom" id="jKg-Yh-oQf"/>
+                            <constraint firstItem="8Ma-nt-aC5" firstAttribute="top" secondItem="cTH-op-AWH" secondAttribute="bottom" id="mPK-4C-oyD"/>
+                            <constraint firstItem="cTH-op-AWH" firstAttribute="leading" secondItem="fHU-qL-qek" secondAttribute="leading" id="mS5-QB-6sy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="followersTableView" destination="cTH-op-AWH" id="2UM-Rl-2Bi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o28-f2-Q12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="232"/>
+        </scene>
+    </scenes>
+</document>

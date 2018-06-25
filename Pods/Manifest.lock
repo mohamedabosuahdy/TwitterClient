@@ -1,0 +1,42 @@
+PODS:
+  - Fabric (1.7.7)
+  - Kingfisher (3.0.1)
+  - SwiftyUserDefaults (3.0.1)
+  - TwitterCore (1.15.3):
+    - Fabric
+  - TwitterKit (1.15.3):
+    - TwitterCore (= 1.15.3)
+
+DEPENDENCIES:
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher.git`, tag `3.0.1`)
+  - SwiftyUserDefaults
+  - TwitterCore (~> 1.12)
+  - TwitterKit (~> 1.12)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Fabric
+    - SwiftyUserDefaults
+    - TwitterCore
+    - TwitterKit
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :git: https://github.com/onevcat/Kingfisher.git
+    :tag: 3.0.1
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :git: https://github.com/onevcat/Kingfisher.git
+    :tag: 3.0.1
+
+SPEC CHECKSUMS:
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  Kingfisher: d5a491b45ea453d90a31bd2c0831d5243e73a73f
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  TwitterCore: cce24b3c798993ccde72787ea79ea9a478b284e4
+  TwitterKit: 43600f2d2848c227739efea5b2939585e69339c3
+
+PODFILE CHECKSUM: 8864de0df1b1458d8d4192c263accae8c33ff9e5
+
+COCOAPODS: 1.5.2
